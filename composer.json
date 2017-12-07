@@ -1,0 +1,11 @@
+{
+  // Bower + Composer
+  "scripts": {
+      "post-install-cmd": [
+      "bower install"
+    ],
+      "post-update-cmd": [
+      "bower install"
+    ]
+  }
+}

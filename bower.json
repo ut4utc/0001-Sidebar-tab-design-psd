@@ -1,0 +1,21 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "authors": [
+    "Alex Snitko - proinsurer.com.ua"
+  ],
+  "description": "Sidebar Test Task",
+  "main": "app/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "appPath": "app",
+  "dependencies": {
+    "jquery": "~3",
+    "bootstrap": "~3",
+    "fontawesome": "~4.7.0"
+  }
+}
