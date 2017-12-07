@@ -21,10 +21,13 @@
   "homepage": "https://github.com/ut4utc/Sidebar-tab-design-psd#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-bundle-assets": "^2.29.0",
     "gulp-concat": "^2.6.1",
     "gulp-install": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "jshint-stylish": "latest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-include": "^2.3.1"
+  }
 }

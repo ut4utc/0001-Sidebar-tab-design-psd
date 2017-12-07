@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 // extended / compressed
 gulp.task('sass', function() {
-	return gulp.src(['./app/sass/**/*.sass', './app/sass/**/*.scss'])
+	return gulp.src(['./app/sass/**/*.scss', './app/sass/**/*.sass'])
 	.pipe(sass({outputStyle: 'extended'}).on('error', sass.logError))
 	.pipe(gulp.dest('./app/css'))
 		// concat all css files to one
@@ -19,14 +19,28 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./dist/js'));
 });
 
+gulp.task('html', function() {
+  return gulp.src('./app/**/*.html')
+    .pipe(gulp.dest('./dist'));
+});
 
+gulp.task('img', function() {
+  return gulp.src('./app/img/**/*.*')
+    .pipe(gulp.dest('./dist/img'));
+});
+
+// watch 
 gulp.task('sass:watch', function() {
-	gulp.watch(['./app/sass/**/*.sass', './app/sass/**/*.scss'], ['sass'])
+	gulp.watch(['./app/sass/**/*.sass', 
+				'./app/sass/**/*.scss',
+				'./app/*.html',
+				'./app/img/**/*.*'
+				],['sass', 'html', 'img'])
 });
 
 gulp.task('default', ['sass', 'scripts', 'sass:watch']);
 
-
+// for testing 
 gulp.task('mytask', function () {
 	console.log('gulp runing')
 });
