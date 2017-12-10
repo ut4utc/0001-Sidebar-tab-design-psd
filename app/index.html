@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test document</title>
+	<style>
+		.flex-container {
+		  padding: 0;
+		  margin: 0;
+		  list-style: none;
+		  
+		  display: -webkit-box;
+		  display: -moz-box;
+		  display: -ms-flexbox;
+		  display: -webkit-flex;
+		  display: flex;
+		  
+		  -webkit-flex-flow: row wrap;
+		  justify-content: space-around;
+		}
+
+		.flex-item {
+		  background: #eee;
+		  padding: 5px;
+		  width: 200px;
+		  height: 150px;
+		  margin-top: 10px;
+		  
+		  line-height: 150px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 2em;
+		  text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<h1>Sidebar tab design (include 2 styles)</h1>
+	</div>
+	
+	<ul class="flex-container">
+	  <li class="flex-item"><a href="native.html">Native</a></li>
+	  <li class="flex-item"><a href="bootstrap.html">Bootstrap</a></li>
+	</ul>
+
+</body>
+</html>
