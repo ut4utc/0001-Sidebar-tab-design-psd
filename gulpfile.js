@@ -1,3 +1,7 @@
+/**
+ * author ut4utc@gmail.com
+ */
+
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	concat = require('gulp-concat');
@@ -44,6 +48,3 @@ gulp.task('default', ['sass', 'scripts', 'sass:watch']);
 gulp.task('mytask', function () {
 	console.log('gulp runing')
 });
-
-
-
